@@ -11,15 +11,32 @@ module.exports = function ($el) {
 }
 
 module.exports.prototype.scene = function (id) {
-  this.view && this.view.remove()
+  if (this.view) {
+    var oldView = this.view
+      , self = this
 
-  this.view = new SceneView({ model: scenes.get(id) })
+    oldView.$el.on('transitionend', function () {
+      oldView.remove()
+      self.renderScene(id)
+    })
 
-  this.$el.append(this.view.render().el)
+    oldView.$el.removeClass('show')
+  } else {
+    this.renderScene(id)
+  }
+}
+
+module.exports.prototype.renderScene = function (id) {
+  var newView = this.view = new SceneView({ model: scenes.get(id) })
+
+  this.$el.append(newView.render().el)
+  process.nextTick(function () {
+    newView.$el.addClass('show')
+  })
 
   // TODO preload audio for each choice
 
-  this.view.once('choice', _.bind(this.scene, this))
+  newView.once('choice', _.bind(this.scene, this))
 }
 
 // TODO load this stuff from a better format

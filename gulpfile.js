@@ -44,3 +44,8 @@ gulp.task('watch-css', function () {
       gulp.start('build-css')
   }))
 })
+
+gulp.task('build', function () {
+  gulp.start('build-js')
+  gulp.start('build-css')
+})

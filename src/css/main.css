@@ -6,6 +6,13 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+
+.scene.show {
+  opacity: 1;
 }
 
 .scene p {
