@@ -6,11 +6,11 @@ var browserify = require('browserify')
   , sourcemaps = require('gulp-sourcemaps')
   , watch = require('gulp-watch')
   , batch = require('gulp-batch')
+  , concat = require('gulp-concat')
 
 gulp.task('build-js', function() {
-
   var bundler = browserify({
-    entries: ['./src/start.js'],
+    entries: ['./src/js/start.js'],
     debug: true
   })
 
@@ -26,7 +26,15 @@ gulp.task('build-js', function() {
 })
 
 gulp.task('watch-js', function () {
-    watch('src/**/*.js', batch(function () {
-        gulp.start('build-js');
-    }));
-});
+    watch('src/js/**', batch(function () {
+        gulp.start('build-js')
+    }))
+})
+
+gulp.task('build-css', function () {
+  return gulp.src(['./node_modules/bootstrap/dist/css/bootstrap.min.css',
+      './node_modules/bootstrap/dist/css/bootstrap-theme.min.css',
+      './src/css/main.css'])
+    .pipe(concat('bundle.css'))
+    .pipe(gulp.dest('./client/'));
+})

@@ -3,6 +3,7 @@ var Backbone = require('backbone')
   , template = require('./scene-view.hbs')
 
 module.exports = Backbone.View.extend({
+  className: "scene",
   events: {
     'click .choices button': 'choice'
   },
