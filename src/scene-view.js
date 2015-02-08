@@ -1,21 +1,24 @@
 var Backbone = require('backbone')
   , $ = require('jquery')
+  , template = require('./scene-view.hbs')
 
 module.exports = Backbone.View.extend({
+  events: {
+    'click .choices button': 'choice'
+  },
+
   render: function () {
-    // TODO probably a template
-    this.$el.append(this.model.get('text'))
+    this.$el.append(template(this.model.toJSON()))
 
-    var audio = $('<audio/>')
-      .attr('src', 'audio/scene-' + this.model.get('id') + '.m4a')
-      .attr('preload', 'auto')
-
-    this.$el.append(audio)
-
+    var self = this
     process.nextTick(function () {
-      audio.get(0).play()
+      self.$el.find('audio').get(0).play()
     })
 
     return this
+  },
+
+  choice: function (e) {
+    this.trigger('choice', $(e.target).data('sceneId'))
   }
 })

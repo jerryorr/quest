@@ -1,0 +1,12 @@
+<div>
+  {{text}}
+
+  <div class="choices">
+    {{#each choices}}
+      <button data-scene-id="{{sceneId}}">{{description}}</button>
+    {{/each}}
+  </div>
+
+  {{!-- TODO use <source> tags instead? --}}
+  <audio src="audio/scene-{{id}}.m4a" preload="auto"></audio>
+</div>
