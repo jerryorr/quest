@@ -1,3 +1,18 @@
+.container {
+  max-width: 600px;
+}
+
+.scene {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
 .scene p {
   font-size: 2em;
+}
+
+.scene img {
+  margin-left: auto;
+  margin-right: auto;
 }

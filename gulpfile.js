@@ -26,9 +26,9 @@ gulp.task('build-js', function() {
 })
 
 gulp.task('watch-js', function () {
-    watch('src/js/**', batch(function () {
-        gulp.start('build-js')
-    }))
+  watch('src/js/**', batch(function () {
+      gulp.start('build-js')
+  }))
 })
 
 gulp.task('build-css', function () {
@@ -37,4 +37,10 @@ gulp.task('build-css', function () {
       './src/css/main.css'])
     .pipe(concat('bundle.css'))
     .pipe(gulp.dest('./client/'));
+})
+
+gulp.task('watch-css', function () {
+  watch('src/css/**', batch(function () {
+      gulp.start('build-css')
+  }))
 })
