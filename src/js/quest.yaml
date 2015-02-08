@@ -1,0 +1,25 @@
+scenes:
+- id: 1
+  text: Suddenly, you see a trap door in the floor. You've never noticed it before.
+
+  choices:
+  - sceneId: 2
+    description: Go find a grownup
+  - sceneId: 3
+    description: Go down alone
+
+- id: 2
+  text: You go upstairs, and see Uncle Chris
+
+- id: 3
+  text: You open the trap door and see stairs. You walk down to the bottom,
+        but everything is really dark.
+
+  choices:
+  - sceneId: 4
+    description: Go back and look for a flashlight
+  - sceneId: 5
+    description: Keep walking in the dark
+
+- id: 4
+  text: You start walking back up the stairs, and see Uncle Chris looking down at you.

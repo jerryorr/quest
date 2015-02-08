@@ -7,12 +7,15 @@ var browserify = require('browserify')
   , watch = require('gulp-watch')
   , batch = require('gulp-batch')
   , concat = require('gulp-concat')
+  , bd = require('browserify-data')
 
 gulp.task('build-js', function() {
   var bundler = browserify({
     entries: ['./src/js/start.js'],
     debug: true
   })
+
+  bundler.transform(bd)
 
   return bundler
     .bundle()
