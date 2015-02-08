@@ -23,3 +23,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.scene .choices {
+
+}
+
+.scene .choices .btn {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 10px;
+}
