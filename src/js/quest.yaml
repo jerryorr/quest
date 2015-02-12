@@ -1,25 +1,92 @@
 scenes:
 - id: 1
-  text: Suddenly, you see a trap door in the floor. You've never noticed it before.
+  text: You're playing down in the basement of your home, just like you do most days.
+        As you walk across the room to pick up one of your cars, you see a trap door
+        in the floor. You've never noticed it before, and you wonder what you might
+        see if you opened it.
 
   choices:
   - sceneId: 2
-    description: Go find a grownup
+    description: Go tell a grownup
   - sceneId: 3
-    description: Go down alone
+    description: Open the door
 
 - id: 2
-  text: You go upstairs, and see Uncle Chris
+  text: This seems like something a grownup should know about, so you head upstairs.
+        Uncle Chris is sitting in the kitchen, eating his lunch of chicken and broccoli.
+        You tell him about the door, and ask him if you can open it.
+
+        "Your parents would probably want us to leave it alone. But really, they shouldn't
+        have left me in charge. Let's go see what's down there."
+
+        You and Uncle Chris go back to the basement and open the trap door. You see stairs
+        leading down into the dark.
+
+  choices:
+  - sceneId: 6
+    description: Go down the stairs
 
 - id: 3
-  text: You open the trap door and see stairs. You walk down to the bottom,
-        but everything is really dark.
+  text: You open the trap door and see stairs leading down. You carefully walk down the stairs.
+        There are lots of stairs; it seems to take forever. You eventually get to the bottom,
+        but it's completely dark; you can't see anything. It might be a good idea to go back
+        for a flashlight, but it's a long walk back up the stairs.
 
   choices:
   - sceneId: 4
-    description: Go back and look for a flashlight
+    description: Go back and get a flashlight
   - sceneId: 5
     description: Keep walking in the dark
 
 - id: 4
-  text: You start walking back up the stairs, and see Uncle Chris looking down at you.
+  text: You start the long climb back up the stairs. As you get to the top, you see Uncle Chris
+        standing at the top of the stairs, shining a flashlight down.
+
+        "Your parents probably wouldn't want you down there. It looks kind of cool, though, and
+        they really shouldn't have left me in charge. Let's see what's down there."
+
+  choices:
+  - sceneId: 6
+    description: Go down the stairs
+
+- id: 5
+  text: Even though you can't really see anything, you start blindy walking in the dark. You take
+        a few steps, then bump your nose on the wall. Holding your nose and feeling rather silly,
+        you decide to go back upstairs to get a flashlight.
+
+  choices:
+  - sceneId: 4
+    description: Go back upstairs
+
+- id: 6
+  text: When you get to the bottom of the stairs, Uncle Chris shines his flashlight around. A long,
+        winding passage is in front of you. You start walking, shivering from the cold air.
+
+        After a few minutes, you see a softly glowing door. As you walk up to it, you see words
+        carved into the door.
+
+        "Adventure and danger lie beyond this door. Only those with the heart of a hero dare open it."
+
+        Adventure sure sounds like fun, but danger? Maybe this isn't such a good idea. You wonder if
+        you should wait until your parents get home.
+
+  choices:
+  - sceneId: 7
+    description: Go back upstairs
+
+  - sceneId: 8
+    description: Open the door
+
+- id: 7
+  text: You tell Uncle Chris that you want to wait for your parents to get home.
+
+        "Yeah, that's probably a good idea," he says. "I don't want to make your mom mad."
+
+        You and Uncle Chris go back up the stairs to your basement. You walk over to get your
+        toy car, and turn around to look at the trap door again. But it's gone.
+
+        Uncle Chris notices that the trap door disappeared, too. "I guess it's probably better that
+        it's gone, anyway. We probably would have gotten in trouble down there. Still, I wonder what
+        was behind that glowing door..."
+- id: 8
+  text: Woo!
