@@ -4,16 +4,19 @@ var Scenes = require('./scenes')
   , SceneView = require('./scene-view')
   , _ = require('underscore')
   , quest = require('./quest.yaml')
+  , $ = require('jquery')
 
 console.log('quest: ', quest)
 
-module.exports = function ($el) {
+var Controller = module.exports = function ($el) {
   this.$el = $el
+
+  this.scenes = new Scenes(quest.scenes)
 
   this.scene(1)
 }
 
-module.exports.prototype.scene = function (id) {
+Controller.prototype.scene = function (id) {
   if (this.view) {
     var oldView = this.view
       , self = this
@@ -29,17 +32,33 @@ module.exports.prototype.scene = function (id) {
   }
 }
 
-module.exports.prototype.renderScene = function (id) {
-  var newView = this.view = new SceneView({ model: scenes.get(id) })
+Controller.prototype.renderScene = function (id) {
+  var newScene = this.scenes.get(id)
+  var newView = this.view = new SceneView({ model: newScene })
 
   this.$el.append(newView.render().el)
+
+  // Needs to be nextTick so that element is in the dom hidden,
+  // then can transition to 'show'
   process.nextTick(function () {
     newView.$el.addClass('show')
   })
 
-  // TODO preload audio for each choice
-
   newView.once('choice', _.bind(this.scene, this))
+
+  var self = this
+  _.chain(newScene.get('choices'))
+    .map(function (choice) { return choice.sceneId })
+    .each(_.bind(this.preload, this))
 }
 
-var scenes = new Scenes(quest.scenes)
+Controller.prototype.preload = function (id) {
+  // TODO I'm not sure this is really doing anything; a request is made,
+  // but one is made again later when we try to load it for real.
+  var source = $('<source/>').attr('src', 'audio/scene-' + id + '.m4a').attr('type', 'audio/x-m4a')
+  $('<audio/>').attr('preload', 'auto').append(source)
+
+
+  $('<img/>').attr('src', 'images/scene-' + id + '.png').css('display', 'none')
+    .appendTo(this.$el)
+}

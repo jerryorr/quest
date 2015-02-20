@@ -11,5 +11,7 @@
   </div>
 
   {{!-- TODO use <source> tags instead? --}}
-  <audio src="audio/scene-{{id}}.m4a" preload="auto"></audio>
+  <audio preload="auto">
+    <source src="audio/scene-{{id}}.m4a" type="audio/x-m4a" />
+  </audio>
 </div>

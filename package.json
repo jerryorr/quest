@@ -4,7 +4,7 @@
   "description": "A choose-your-own-adventure style game for my kids",
   "main": "index.js",
   "scripts": {
-    "build-js": "gulp build-js",
+    "build-js": "browserify -d ./src/js/start.js -o ./client/bundle.js",
     "watch-js": "watchify -d ./src/start.js -o ./client/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,6 +33,7 @@
   },
   "browserify": {
     "transform": [
+      "browserify-data",
       [
         "hbsfy",
         {
