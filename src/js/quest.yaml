@@ -1,6 +1,7 @@
 scenes:
 - id: 1
-  text: You're playing down in the basement of your home, just like you do most days.
+  text: >
+        You're playing down in the basement of your home, just like you do most days.
         As you walk across the room to pick up one of your cars, you see a trap door
         in the floor. You've never noticed it before, and you wonder what you might
         see if you opened it.
@@ -12,7 +13,8 @@ scenes:
     description: Open the door
 
 - id: 2
-  text: This seems like something a grownup should know about, so you head upstairs.
+  text: >
+        This seems like something a grownup should know about, so you head upstairs.
         Uncle Chris is sitting in the kitchen, eating his lunch of chicken and broccoli.
         You tell him about the door, and ask him if you can open it.
 
@@ -78,7 +80,8 @@ scenes:
     description: Open the door
 
 - id: 7
-  text: You tell Uncle Chris that you want to wait for your parents to get home.
+  text: >
+        You tell Uncle Chris that you want to wait for your parents to get home.
 
         "Yeah, that's probably a good idea," he says. "I don't want to make your mom mad."
 
@@ -89,4 +92,24 @@ scenes:
         it's gone, anyway. We probably would have gotten in trouble down there. Still, I wonder what
         was behind that glowing door..."
 - id: 8
-  text: Woo!
+  text: You and Uncle Chris grab the door handle and pull it open. Through the opening, you see a huge
+        room with stone walls and columns; it looks like the inside of a castle. Before you can decide
+        if it's a good idea to step in, a strong wind pushes you and Uncle Chris through the doorway.
+
+        You stumble in, and the door slams shut behind you. You wonder if the door will open again, but
+        you don't have a chance to check; you notice that dozens of people are looking at you, including
+        an older man wearing a crown.
+
+        "Thank heavens you're here! You must be the heroes that the sorceress spoke of!"
+
+        Uncle Chris looks at you, shrugs, and says "Uh, yeah, that's us. The heroes."
+
+        TODO this needs to be broken up somehow
+
+        "Well," says the king, " you've arrived just in time. A terrible dragon is attacking our kindgom.
+        He's burning our crops, smashing our houses, and eating our livestock! The good sorceress told us
+        that two heroes would come to save us, but my daughter, Princess Bethany, refused to wait. She
+        took off to fight the dragon on her own."
+
+        "I will give you our fastest gryphon. Find Princess Bethany before she gets to the dragon, and bring
+        her back to the castle. Then we will come up with a plan to defeat the dragon."
