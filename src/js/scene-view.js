@@ -10,7 +10,7 @@ module.exports = Backbone.View.extend({
 
   render: function () {
     var data = this.model.toJSON()
-    data.text = _.map(data.text.split('\n'), function (p) {
+    data.text = _.map(data.text.split('\n\n'), function (p) {
       return '<p>' + p + '</p>'
     }).join('')
     this.$el.append(template(data))

@@ -1,10 +1,10 @@
 scenes:
 - id: 1
-  text: >
-        You're playing down in the basement of your home, just like you do most days.
-        As you walk across the room to pick up one of your cars, you see a trap door
-        in the floor. You've never noticed it before, and you wonder what you might
-        see if you opened it.
+  text: |
+    You're playing down in the basement of your home, just like you do most days.
+    As you walk across the room to pick up one of your cars, you see a trap door
+    in the floor. You've never noticed it before, and you wonder what you might
+    see if you opened it.
 
   choices:
   - sceneId: 2
@@ -13,26 +13,27 @@ scenes:
     description: Open the door
 
 - id: 2
-  text: >
-        This seems like something a grownup should know about, so you head upstairs.
-        Uncle Chris is sitting in the kitchen, eating his lunch of chicken and broccoli.
-        You tell him about the door, and ask him if you can open it.
+  text: |
+    This seems like something a grownup should know about, so you head upstairs.
+    Uncle Chris is sitting in the kitchen, eating his lunch of chicken and broccoli.
+    You tell him about the door, and ask him if you can open it.
 
-        "Your parents would probably want us to leave it alone. But really, they shouldn't
-        have left me in charge. Let's go see what's down there."
+    "Your parents would probably want us to leave it alone. But really, they shouldn't
+    have left me in charge. Let's go see what's down there."
 
-        You and Uncle Chris go back to the basement and open the trap door. You see stairs
-        leading down into the dark.
+    You and Uncle Chris go back to the basement and open the trap door. You see stairs
+    leading down into the dark.
 
   choices:
   - sceneId: 6
     description: Go down the stairs
 
 - id: 3
-  text: You open the trap door and see stairs leading down. You carefully walk down the stairs.
-        There are lots of stairs; it seems to take forever. You eventually get to the bottom,
-        but it's completely dark; you can't see anything. It might be a good idea to go back
-        for a flashlight, but it's a long walk back up the stairs.
+  text: |
+    You open the trap door and see stairs leading down. You carefully walk down the stairs.
+    There are lots of stairs; it seems to take forever. You eventually get to the bottom,
+    but it's completely dark; you can't see anything. It might be a good idea to go back
+    for a flashlight, but it's a long walk back up the stairs.
 
   choices:
   - sceneId: 4
@@ -41,36 +42,39 @@ scenes:
     description: Keep walking in the dark
 
 - id: 4
-  text: You start the long climb back up the stairs. As you get to the top, you see Uncle Chris
-        standing at the top of the stairs, shining a flashlight down.
+  text: |
+    You start the long climb back up the stairs. As you get to the top, you see Uncle Chris
+    standing at the top of the stairs, shining a flashlight down.
 
-        "Your parents probably wouldn't want you down there. It looks kind of cool, though, and
-        they really shouldn't have left me in charge. Let's see what's down there."
+    "Your parents probably wouldn't want you down there. It looks kind of cool, though, and
+    they really shouldn't have left me in charge. Let's see what's down there."
 
   choices:
   - sceneId: 6
     description: Go down the stairs
 
 - id: 5
-  text: Even though you can't really see anything, you start blindy walking in the dark. You take
-        a few steps, then bump your nose on the wall. Holding your nose and feeling rather silly,
-        you decide to go back upstairs to get a flashlight.
+  text: |
+    Even though you can't really see anything, you start blindy walking in the dark. You take
+    a few steps, then bump your nose on the wall. Holding your nose and feeling rather silly,
+    you decide to go back upstairs to get a flashlight.
 
   choices:
   - sceneId: 4
     description: Go back upstairs
 
 - id: 6
-  text: When you get to the bottom of the stairs, Uncle Chris shines his flashlight around. A long,
-        winding passage is in front of you. You start walking, shivering from the cold air.
+  text: |
+    When you get to the bottom of the stairs, Uncle Chris shines his flashlight around. A long,
+    winding passage is in front of you. You start walking, shivering from the cold air.
 
-        After a few minutes, you see a softly glowing door. As you walk up to it, you see words
-        carved into the door.
+    After a few minutes, you see a softly glowing door. As you walk up to it, you see words
+    carved into the door.
 
-        "Adventure and danger lie beyond this door. Only those with the heart of a hero dare open it."
+    "Adventure and danger lie beyond this door. Only those with the heart of a hero dare open it."
 
-        Adventure sure sounds like fun, but danger? Maybe this isn't such a good idea. You wonder if
-        you should wait until your parents get home.
+    Adventure sure sounds like fun, but danger? Maybe this isn't such a good idea. You wonder if
+    you should wait until your parents get home.
 
   choices:
   - sceneId: 7
@@ -80,36 +84,93 @@ scenes:
     description: Open the door
 
 - id: 7
-  text: >
-        You tell Uncle Chris that you want to wait for your parents to get home.
+  text: |
+    You tell Uncle Chris that you want to wait for your parents to get home.
 
-        "Yeah, that's probably a good idea," he says. "I don't want to make your mom mad."
+    "Yeah, that's probably a good idea," he says. "I don't want to make your mom mad."
 
-        You and Uncle Chris go back up the stairs to your basement. You walk over to get your
-        toy car, and turn around to look at the trap door again. But it's gone.
+    You and Uncle Chris go back up the stairs to your basement. You walk over to get your
+    toy car, and turn around to look at the trap door again. But it's gone.
 
-        Uncle Chris notices that the trap door disappeared, too. "I guess it's probably better that
-        it's gone, anyway. We probably would have gotten in trouble down there. Still, I wonder what
-        was behind that glowing door..."
+    Uncle Chris notices that the trap door disappeared, too. "I guess it's probably better that
+    it's gone, anyway. We probably would have gotten in trouble down there. Still, I wonder what
+    was behind that glowing door..."
+
 - id: 8
-  text: You and Uncle Chris grab the door handle and pull it open. Through the opening, you see a huge
-        room with stone walls and columns; it looks like the inside of a castle. Before you can decide
-        if it's a good idea to step in, a strong wind pushes you and Uncle Chris through the doorway.
+  text: |
+    You and Uncle Chris grab the door handle and pull it open. Through the opening, you see a huge
+    room with stone walls and columns; it looks like the inside of a castle. Before you can decide
+    if it's a good idea to step in, a strong wind pushes you and Uncle Chris through the doorway.
 
-        You stumble in, and the door slams shut behind you. You wonder if the door will open again, but
-        you don't have a chance to check; you notice that dozens of people are looking at you, including
-        an older man wearing a crown.
+    You stumble in, and the door slams shut behind you. You wonder if the door will open again, but
+    you don't have a chance to check; you notice that dozens of people are looking at you, including
+    an older man wearing a crown.
 
-        "Thank heavens you're here! You must be the heroes that the sorceress spoke of!"
+    "Thank heavens you're here! You must be the heroes that the sorceress spoke of!"
 
-        Uncle Chris looks at you, shrugs, and says "Uh, yeah, that's us. The heroes."
+    Uncle Chris looks at you, shrugs, and says "Uh, yeah, that's us. The heroes."
 
-        TODO this needs to be broken up somehow
+    TODO this needs to be broken up somehow
 
-        "Well," says the king, " you've arrived just in time. A terrible dragon is attacking our kindgom.
-        He's burning our crops, smashing our houses, and eating our livestock! The good sorceress told us
-        that two heroes would come to save us, but my daughter, Princess Bethany, refused to wait. She
-        took off to fight the dragon on her own."
+    "Well," says the king, "you've arrived just in time. A terrible dragon is attacking our kindgom.
+    He's burning our crops, smashing our houses, and eating our livestock! The good sorceress told us
+    that two heroes would come to save us, but my daughter, Princess Bethany, refused to wait. She
+    took off to fight the dragon on her own."
 
-        "I will give you our fastest gryphon. Find Princess Bethany before she gets to the dragon, and bring
-        her back to the castle. Then we will come up with a plan to defeat the dragon."
+    "I will give you our fastest gryphon. Find Princess Bethany before she gets to the dragon, and bring
+    her back to the castle. Then we will come up with a plan to defeat the dragon."
+
+    You climb aboard the gryphon, but there is only room for one person. "You go ahead," says Uncle Chris.
+    "The king has some jars he can't get open, so I'm going to take care of that."
+
+    The gryphon sure is big. You aren't sure if this is such a good idea.
+
+  choices:
+  - sceneId: 9
+    description: Hold on tight and take off
+  - sceneId: 10
+    description: Climb down and find a horse
+
+- id: 9
+  text: |
+    You wrap your arms around the gryphon, and say "Let's go!" The gryphon flaps its wings and leaps into the air.
+
+    Before you know it, you're soaring high above the ground and quickly flying away from the castle. In a couple
+    minutes, you can't even see the castle anymore. You're so far in the air that you almost don't see the horse
+    galloping on the ground below you. That must be Princess Bethany!
+
+    You could tell the gryphon to land in front of her, or you could just keep going and stop the dragon yourself.
+
+  choices:
+  - sceneId: 11
+    description: Land in front of Princes Bethany
+  - sceneId: 12
+    description: Keep on looking for the dragon
+
+
+- id: 10
+  text: |
+    You start to climb down, but suddenly the gryphon flaps its wings and leaps into the air. You hold on
+    as tight as you can as the gryphon climbs into the sky.
+
+- id: 11
+  text: |
+    The gryphon lands in the middle of the road, blocking Princess Bethany's path. She charges her horse right up
+    to you, glaring angrily.
+
+    "So, my father sent you to stop me, did he? Well, everyone else is afraid to stop this dragon, so I'm going to do
+    it myself. Or," she says, drawing her sword, "you can try to stop me. I wouldn't recommend it, though."
+
+    The king gave you a sword, but Princess Bethany looks pretty indimidating. You would probably have an easier time
+    fighting the dragon. You could just fly ahead of her and fight the dragon before she shows up, but maybe you
+    and the princess could work together to stop the dragon.
+
+  choices:
+  - sceneId: 12
+    description: Fly ahead and find the dragon yourself
+  - sceneId: 13
+    description: Team up with Princess Bethany
+
+- id: 12
+  description: |
+    [fly ahead]

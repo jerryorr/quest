@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build-js": "browserify -d ./src/js/start.js -o ./client/bundle.js",
+    "build-css": "gulp build-css",
     "watch-js": "watchify -d ./src/start.js -o ./client/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
